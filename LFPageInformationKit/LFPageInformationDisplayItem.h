@@ -49,9 +49,9 @@
 @protocol LFPageInformationDisplayItemDelegate <NSObject>
 
 @optional
-- (void)lfpi_informationViewDidDisplay:(LFPageInformationDisplayItem *)modelWindow;
+- (void)lfpi_informationViewDidDisplay:(LFPageInformationDisplayItem *)displayItem;
 
-- (void)lfpi_informationViewDidHide:(LFPageInformationDisplayItem *)modelWindow;
+- (void)lfpi_informationViewDidHide:(LFPageInformationDisplayItem *)displayItem;
 
 @end
 
