@@ -164,7 +164,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = Formax;
+				ORGANIZATIONNAME = guangbool;
 				TargetAttributes = {
 					98AFD0C51CFD95800070505F = {
 						CreatedOnToolsVersion = 7.3.1;
