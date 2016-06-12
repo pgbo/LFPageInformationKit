@@ -3,7 +3,7 @@
 //  LFPageInformationKitDemo
 //
 //  Created by guangbool on 16/6/1.
-//  Copyright © 2016年 Formax. All rights reserved.
+//  Copyright © 2016年 guangbool. All rights reserved.
 //
 
 #import "LifePageStatusDisplayItemFactory.h"
