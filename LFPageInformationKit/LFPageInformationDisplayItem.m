@@ -83,12 +83,13 @@
     
     if (animated && self.pageInformationAnimation) {
         
+        _isDisplaying = YES;
+        
         LFPageInformationDisplayAnimationContext *animationCtx = [[LFPageInformationDisplayAnimationContext alloc]init];
         animationCtx.lfpi_containerView = _pageInformationContainerView;
         animationCtx.lfpi_fromVisible = NO;
         animationCtx.lfpi_toVisible = YES;
         animationCtx.lfpi_completeAnimationBlock = ^(BOOL didComplete){
-            _isDisplaying = YES;
             [self didShow];
         };
         [self.pageInformationAnimation lfpi_animate:animationCtx];
@@ -119,12 +120,13 @@
     
     if (animated && self.pageInformationAnimation) {
         
+        _isDisplaying = NO;
+        
         LFPageInformationDisplayAnimationContext *animationCtx = [[LFPageInformationDisplayAnimationContext alloc]init];
         animationCtx.lfpi_containerView = _pageInformationContainerView;
         animationCtx.lfpi_fromVisible = YES;
         animationCtx.lfpi_toVisible = NO;
         animationCtx.lfpi_completeAnimationBlock = ^(BOOL didComplete){
-            _isDisplaying = NO;
             [self didHide];
         };
         [self.pageInformationAnimation lfpi_animate:animationCtx];
