@@ -76,8 +76,7 @@
 /**
  *  指定动画
  */
-@property (nonatomic,
-           ) id<LFPageInformationAnimating> pageInformationAnimation;
+@property (nonatomic, strong) id<LFPageInformationAnimating> pageInformationAnimation;
 
 - (instancetype)initWithPageInformationDisplayView:(UIView<LFPageInformationDisplayView> *)pageInformationDisplayView
                       pageInformationContainerView:(UIView *)pageInformationContainerView;
