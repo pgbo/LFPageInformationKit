@@ -15,31 +15,21 @@
 
 /**
  *  在添加到容器视图时是否隐藏
- *
- *  @return
  */
 - (BOOL)lfpi_hideBeforeAddIntoContainerView;
 
 /**
  *  是否居中显示
- *
- *  @return
  */
 - (BOOL)lfpi_aliginCenter;
 
 /**
  *  hide 后是否从父视图上删除
- *
- *  @return
  */
 - (BOOL)lfpi_removeFromSuperViewWhenHide;
 
 /**
  *  视图内容尺寸
- *
- *  @param size
- *
- *  @return
  */
 - (CGSize)lfpi_intrinsicContentSize;
 
