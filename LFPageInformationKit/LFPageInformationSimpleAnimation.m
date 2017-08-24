@@ -20,8 +20,7 @@
     if (!animationContext.lfpi_fromVisible && animationContext.lfpi_toVisible && _informationDisplayView) {
         
         _informationDisplayView.alpha = 0;
-
-        [UIView animateWithDuration:0.3 animations:^{
+        [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
             _informationDisplayView.alpha = 1;
         } completion:^(BOOL finished) {
             if (animationContext.lfpi_completeAnimationBlock) {
@@ -30,7 +29,7 @@
         }];
         
     } else if (animationContext.lfpi_fromVisible && !animationContext.lfpi_toVisible) {
-        [UIView animateWithDuration:0.3 animations:^{
+        [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
             _informationDisplayView.alpha = 0;
         } completion:^(BOOL finished) {
             if (animationContext.lfpi_completeAnimationBlock) {

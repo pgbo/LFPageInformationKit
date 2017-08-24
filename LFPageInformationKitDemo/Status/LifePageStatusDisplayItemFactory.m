@@ -24,7 +24,7 @@
                                                      displayActionButtonWithTitle:(NSString *)displayActionButtonWithTitle
 {
     return [self createDefaultDisplayItemWithContainerView:containerView
-                                              displayImage:[UIImage imageNamed:@"no_data_common"]
+                                              displayImage:[UIImage imageNamed:@"empty"]
                                                displayText:displayText
                               displayActionButtonWithTitle:displayActionButtonWithTitle];
 }
@@ -69,7 +69,7 @@
         defaultLayout = ({
             LFPageInformationDefaultDisplayViewLayout *layout = [[LFPageInformationDefaultDisplayViewLayout alloc]init];
             layout.imageViewInsets = UIEdgeInsetsMake(0, 20, 0, 20);
-            layout.imageViewHeight = 100;
+            layout.imageViewHeight = 64;
             layout.textLabelInsets = UIEdgeInsetsMake(16, 20, 0, 20);
             layout.actionButtonInsets = UIEdgeInsetsMake(16, 20, 0, 20);
             layout.actionButtonHeight = 38;
