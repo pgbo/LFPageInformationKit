@@ -102,6 +102,10 @@
 
 - (void)didShow
 {
+    if (!_isDisplaying) {
+        return;
+    }
+    
     if (self.pageInformationDisplayDelegate
         && [self.pageInformationDisplayDelegate respondsToSelector:@selector(lfpi_informationViewDidDisplay:)]) {
         [self.pageInformationDisplayDelegate lfpi_informationViewDidDisplay:self];
@@ -139,6 +143,10 @@
 
 - (void)didHide
 {
+    if (_isDisplaying) {
+        return;
+    }
+    
     if (_pageInformationDisplayView.lfpi_removeFromSuperViewWhenHide) {
         [_pageInformationDisplayView removeFromSuperview];
     }

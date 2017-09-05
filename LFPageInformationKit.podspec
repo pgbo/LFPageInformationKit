@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name                  = 'LFPageInformationKit'
-    spec.version               = '1.0.5'
+    spec.version               = '1.0.6'
     spec.summary               = 'Handily and simply extend display information in a view'
 
     spec.description           = <<-DESC
